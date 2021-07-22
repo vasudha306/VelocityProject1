@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="8" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="69216" started-at="2021-07-22T12:57:16 IST" finished-at="2021-07-22T12:58:25 IST">
+    <groups>
+    </groups>
+    <test name="firefox Test" duration-ms="68488" started-at="2021-07-22T12:57:16 IST" finished-at="2021-07-22T12:58:24 IST">
+      <class name="org.testPack.Groww">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:org.testPack.Groww@782663d3]" name="LaunchBrowser" is-config="true" duration-ms="6255" started-at="2021-07-22T12:57:16 IST" finished-at="2021-07-22T12:57:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="OpenUrl()[pri:0, instance:org.testPack.Groww@782663d3]" name="OpenUrl" is-config="true" duration-ms="2249" started-at="2021-07-22T12:57:24 IST" finished-at="2021-07-22T12:57:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenUrl -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:org.testPack.Groww@782663d3]" name="Login" duration-ms="7191" started-at="2021-07-22T12:57:26 IST" finished-at="2021-07-22T12:57:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="verifyInvestmentIsPresentOntheScreen()[pri:0, instance:org.testPack.Groww@782663d3]" name="verifyInvestmentIsPresentOntheScreen" duration-ms="1212" started-at="2021-07-22T12:57:33 IST" finished-at="2021-07-22T12:57:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvestmentIsPresentOntheScreen -->
+        <test-method status="PASS" signature="close()[pri:0, instance:org.testPack.Groww@782663d3]" name="close" is-config="true" duration-ms="0" started-at="2021-07-22T12:57:34 IST" finished-at="2021-07-22T12:57:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:org.testPack.Groww@782663d3]" name="closeBrowser" is-config="true" duration-ms="625" started-at="2021-07-22T12:58:23 IST" finished-at="2021-07-22T12:58:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- org.testPack.Groww -->
+      <class name="org.testPack.TestHomePage">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:org.testPack.TestHomePage@3578436e]" name="launchBrowser" is-config="true" duration-ms="1715" started-at="2021-07-22T12:57:22 IST" finished-at="2021-07-22T12:57:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="openURl()[pri:0, instance:org.testPack.TestHomePage@3578436e]" name="openURl" is-config="true" duration-ms="17764" started-at="2021-07-22T12:57:34 IST" finished-at="2021-07-22T12:57:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURl -->
+        <test-method status="PASS" signature="homePagee()[pri:0, instance:org.testPack.TestHomePage@3578436e]" name="homePagee" duration-ms="24555" started-at="2021-07-22T12:57:52 IST" finished-at="2021-07-22T12:58:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePagee -->
+        <test-method status="FAIL" signature="verifyProceedToPayButton()[pri:0, instance:org.testPack.TestHomePage@3578436e]" name="verifyProceedToPayButton" duration-ms="6057" started-at="2021-07-22T12:58:17 IST" finished-at="2021-07-22T12:58:23 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="userCart"]/div/div[2]/div/div[2]/div/div/div[7]/div/div/div/div"}
+  (Session info: chrome=91.0.4472.164)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MVPCIE6', ip: '192.168.43.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58186}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 726c790b6d352b8ce4502a281a93a6fd
+*** Element info: {Using=xpath, value=//*[@id="userCart"]/div/div[2]/div/div[2]/div/div/div[7]/div/div/div/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="userCart"]/div/div[2]/div/div[2]/div/div/div[7]/div/div/div/div"}
+  (Session info: chrome=91.0.4472.164)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MVPCIE6', ip: '192.168.43.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58186}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 726c790b6d352b8ce4502a281a93a6fd
+*** Element info: {Using=xpath, value=//*[@id="userCart"]/div/div[2]/div/div[2]/div/div/div[7]/div/div/div/div}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.isEnabled(Unknown Source)
+at org.pomPack.HomePage.verifyProceedToPayEnabled(HomePage.java:65)
+at org.testPack.TestHomePage.verifyProceedToPayButton(TestHomePage.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProceedToPayButton -->
+        <test-method status="PASS" signature="closeURL()[pri:0, instance:org.testPack.TestHomePage@3578436e]" name="closeURL" is-config="true" duration-ms="1" started-at="2021-07-22T12:58:23 IST" finished-at="2021-07-22T12:58:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeURL -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:org.testPack.TestHomePage@3578436e]" name="closeBrowser" is-config="true" duration-ms="794" started-at="2021-07-22T12:58:23 IST" finished-at="2021-07-22T12:58:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- org.testPack.TestHomePage -->
+    </test> <!-- firefox Test -->
+    <test name="chrome Test" duration-ms="69216" started-at="2021-07-22T12:57:16 IST" finished-at="2021-07-22T12:58:25 IST">
+      <class name="org.testPack.Groww">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:org.testPack.Groww@3b94d659]" name="LaunchBrowser" is-config="true" duration-ms="6098" started-at="2021-07-22T12:57:16 IST" finished-at="2021-07-22T12:57:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="OpenUrl()[pri:0, instance:org.testPack.Groww@3b94d659]" name="OpenUrl" is-config="true" duration-ms="2277" started-at="2021-07-22T12:57:23 IST" finished-at="2021-07-22T12:57:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenUrl -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:org.testPack.Groww@3b94d659]" name="Login" duration-ms="7133" started-at="2021-07-22T12:57:26 IST" finished-at="2021-07-22T12:57:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="verifyInvestmentIsPresentOntheScreen()[pri:0, instance:org.testPack.Groww@3b94d659]" name="verifyInvestmentIsPresentOntheScreen" duration-ms="2008" started-at="2021-07-22T12:57:33 IST" finished-at="2021-07-22T12:57:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvestmentIsPresentOntheScreen -->
+        <test-method status="PASS" signature="close()[pri:0, instance:org.testPack.Groww@3b94d659]" name="close" is-config="true" duration-ms="1" started-at="2021-07-22T12:57:35 IST" finished-at="2021-07-22T12:57:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:org.testPack.Groww@3b94d659]" name="closeBrowser" is-config="true" duration-ms="693" started-at="2021-07-22T12:58:23 IST" finished-at="2021-07-22T12:58:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- org.testPack.Groww -->
+      <class name="org.testPack.TestHomePage">
+        <test-method status="PASS" signature="requrementBeforeBrowserLaunch()[pri:0, instance:org.testPack.TestHomePage@68ceda24]" name="requrementBeforeBrowserLaunch" is-config="true" duration-ms="7" started-at="2021-07-22T12:57:16 IST" finished-at="2021-07-22T12:57:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- requrementBeforeBrowserLaunch -->
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:org.testPack.TestHomePage@68ceda24]" name="launchBrowser" is-config="true" duration-ms="1520" started-at="2021-07-22T12:57:22 IST" finished-at="2021-07-22T12:57:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="openURl()[pri:0, instance:org.testPack.TestHomePage@68ceda24]" name="openURl" is-config="true" duration-ms="17545" started-at="2021-07-22T12:57:35 IST" finished-at="2021-07-22T12:57:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURl -->
+        <test-method status="PASS" signature="homePagee()[pri:0, instance:org.testPack.TestHomePage@68ceda24]" name="homePagee" duration-ms="25105" started-at="2021-07-22T12:57:52 IST" finished-at="2021-07-22T12:58:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePagee -->
+        <test-method status="FAIL" signature="verifyProceedToPayButton()[pri:0, instance:org.testPack.TestHomePage@68ceda24]" name="verifyProceedToPayButton" duration-ms="6059" started-at="2021-07-22T12:58:17 IST" finished-at="2021-07-22T12:58:23 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="userCart"]/div/div[2]/div/div[2]/div/div/div[7]/div/div/div/div"}
+  (Session info: chrome=91.0.4472.164)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MVPCIE6', ip: '192.168.43.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da2ecc6c16f2d721ed463eb3972bd87f
+*** Element info: {Using=xpath, value=//*[@id="userCart"]/div/div[2]/div/div[2]/div/div/div[7]/div/div/div/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="userCart"]/div/div[2]/div/div[2]/div/div/div[7]/div/div/div/div"}
+  (Session info: chrome=91.0.4472.164)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MVPCIE6', ip: '192.168.43.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da2ecc6c16f2d721ed463eb3972bd87f
+*** Element info: {Using=xpath, value=//*[@id="userCart"]/div/div[2]/div/div[2]/div/div/div[7]/div/div/div/div}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.isEnabled(Unknown Source)
+at org.pomPack.HomePage.verifyProceedToPayEnabled(HomePage.java:65)
+at org.testPack.TestHomePage.verifyProceedToPayButton(TestHomePage.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProceedToPayButton -->
+        <test-method status="PASS" signature="closeURL()[pri:0, instance:org.testPack.TestHomePage@68ceda24]" name="closeURL" is-config="true" duration-ms="1" started-at="2021-07-22T12:58:23 IST" finished-at="2021-07-22T12:58:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeURL -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:org.testPack.TestHomePage@68ceda24]" name="closeBrowser" is-config="true" duration-ms="689" started-at="2021-07-22T12:58:24 IST" finished-at="2021-07-22T12:58:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- org.testPack.TestHomePage -->
+    </test> <!-- chrome Test -->
+  </suite> <!-- Suite1 -->
+</testng-results>

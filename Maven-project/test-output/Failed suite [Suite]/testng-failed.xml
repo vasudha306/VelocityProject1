@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]" parallel="tests">
+  <test thread-count="3" name="opera`(failed)(failed)" parallel="tests">
+    <classes>
+      <class name="org.testPack.Groww">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="verifyInvestmentIsPresentOntheScreen"/>
+          <include name="OpenUrl"/>
+        </methods>
+      </class> <!-- org.testPack.Groww -->
+    </classes>
+  </test> <!-- opera`(failed)(failed) -->
+  <test thread-count="3" name="firefox(failed)(failed)" parallel="tests">
+    <classes>
+      <class name="org.testPack.Groww">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="verifyInvestmentIsPresentOntheScreen"/>
+          <include name="OpenUrl"/>
+        </methods>
+      </class> <!-- org.testPack.Groww -->
+      <class name="org.testPack.TestHomePage">
+        <methods>
+          <include name="verifyProceedToPayButton"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="openURl"/>
+          <include name="closeURL"/>
+        </methods>
+      </class> <!-- org.testPack.TestHomePage -->
+    </classes>
+  </test> <!-- firefox(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

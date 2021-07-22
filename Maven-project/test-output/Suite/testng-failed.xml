@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="firefox Test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="org.testPack.TestHomePage">
+        <methods>
+          <include name="verifyProceedToPayButton"/>
+          <include name="requrementBeforeBrowserLaunch"/>
+          <include name="homePagee"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="openURl"/>
+          <include name="closeURL"/>
+        </methods>
+      </class> <!-- org.testPack.TestHomePage -->
+      <class name="org.testPack.Groww">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="verifyInvestmentIsPresentOntheScreen"/>
+          <include name="Login"/>
+          <include name="OpenUrl"/>
+        </methods>
+      </class> <!-- org.testPack.Groww -->
+    </classes>
+  </test> <!-- firefox Test(failed) -->
+  <test thread-count="2" name="chrome Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="org.testPack.TestHomePage">
+        <methods>
+          <include name="verifyProceedToPayButton"/>
+          <include name="requrementBeforeBrowserLaunch"/>
+          <include name="homePagee"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="openURl"/>
+          <include name="closeURL"/>
+        </methods>
+      </class> <!-- org.testPack.TestHomePage -->
+      <class name="org.testPack.Groww">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="verifyInvestmentIsPresentOntheScreen"/>
+          <include name="Login"/>
+          <include name="OpenUrl"/>
+        </methods>
+      </class> <!-- org.testPack.Groww -->
+    </classes>
+  </test> <!-- chrome Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

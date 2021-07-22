@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="org.testPack.TestHomePage">
+        <methods>
+          <include name="verifyProceedToPayButton"/>
+          <include name="requrementBeforeBrowserLaunch"/>
+          <include name="homePagee"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="openURl"/>
+          <include name="closeURL"/>
+        </methods>
+      </class> <!-- org.testPack.TestHomePage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
